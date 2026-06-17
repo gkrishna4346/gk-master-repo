@@ -94,15 +94,15 @@
 
 	.profile-pic{
     position:absolute;
-    top:40px;
-    right:20px;
+    top:15px;
+    left:15px;
 }
 
 .profile-pic img{
-    width:150px;
-    height:150px;
+    width:90px;
+    height:90px;
 
-    border-radius:60%;
+    border-radius:50%;
 
     object-fit:cover;
 
@@ -111,8 +111,58 @@
     box-shadow:0 0 10px rgba(0,0,0,0.3);
 }
 
+	@media screen and (max-width:768px){
+
+.hh1{
+    font-size:18px;
+    padding-top:100px;
+}
+
+.nav-menu{
+    flex-direction:column;
+
+    width:100%;
+
+    padding:10px;
+}
+
+.nav-menu>li{
+    margin:10px 0;
+}
+
+.profile-pic{
+    left:50%;
+    transform:translateX(-50%);
+    top:10px;
+}
+
+.profile-pic img{
+    width:80px;
+    height:80px;
+}
+
+.dropdown{
+    position:relative;
+
+    width:100%;
+
+    box-shadow:none;
+}
+
+.sub-menu{
+    left:0;
+}
+
+body{
+background-size:cover;
+}
+
+}
+
+	
 </style>
 <meta http-equiv="refresh" content="60">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
