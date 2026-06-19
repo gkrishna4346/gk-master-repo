@@ -58,16 +58,23 @@
         text-decoration: none;
 
     }
-    .dropdown{
-        padding:0;
-        list-style-type: none;
-        width:200px;
-        background-color:#FFFFFF;
-        box-shadow: -2px 2px 81px -27px rgba(0,0,0,0.3);
-        position: absolute;
-        visibility: hidden;
+   	.dropdown{
+    padding:0;
+    list-style-type:none;
 
-    }
+    width:max-content;      /* auto adjust */
+    min-width:250px;        /* minimum width */
+
+    background-color:#FFFFFF;
+
+    box-shadow:-2px 2px 81px -27px rgba(0,0,0,0.3);
+
+    position:absolute;
+
+    visibility:hidden;
+
+    white-space:nowrap;     /* prevent wrapping */
+	}
     .dropdown a{
         color:#043d0b;
         text-decoration: none;
